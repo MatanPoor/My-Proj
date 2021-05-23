@@ -18,13 +18,14 @@ function Calculator(a ,b){
     }
 
 var c1 = new Calculator (10,5);
+c1.log();
 
-var logFunc = c1.log;
-logFunc.call(c1);
+// var logFunc = c1.log;
+// logFunc.call(c1);
 
-console.log('------------------------------------------------------------')
+setTimeout(function(){
 
-var c2 = new Calculator (12,6);
-
-var logFunc = c2.log;
-logFunc.call(c2);
+    console.log('------------------------------------------------------------')
+    var c2 = new Calculator (12,6);
+    c2.log();
+},2000)
