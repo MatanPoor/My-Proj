@@ -1,0 +1,21 @@
+
+<h1>Calculater</h1>
+
+<div>
+    <input #inputA (input)='setKeyWordA(inputA.value)'>
+    <input #inputB (input)='setKeyWordB(inputB.value)'>
+
+</div>
+
+<div><button (click)="calcRes()">Go</button></div>
+
+
+<div *ngIf="toView">
+   <p>{{keyWordA}} + {{keyWordB}} = {{resAdd}}</p>
+   <p>{{keyWordA}} - {{keyWordB}} = {{resSub}}</p>
+   <p>{{keyWordA}} * {{keyWordB}} = {{resMult}}</p>
+</div>
+
+
+
+ 
