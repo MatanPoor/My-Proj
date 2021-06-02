@@ -1,0 +1,10 @@
+<div>
+    <div *ngFor="let question of userSelected" 
+        [class.answerIsRight]="question.userAnswer===question.correctAnswer"
+        [class.answerIsWorng]="question.userAnswer!==question.correctAnswer">
+      
+            <h2>{{question.caption}}</h2>
+            <p>{{question.answers[question.userAnswer]}}</p>
+      
+    </div>   
+</div>

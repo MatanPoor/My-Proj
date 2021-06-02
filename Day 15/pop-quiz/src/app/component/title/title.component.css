@@ -1,0 +1,9 @@
+.title-area{
+    grid-column: 1/-1;
+    background-color: rgba(113, 113, 238, 0.897);
+}
+
+h1
+{
+    text-align: center;
+}
